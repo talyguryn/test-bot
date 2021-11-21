@@ -1,0 +1,7 @@
+version: '3'
+services:
+  app-prod:
+    image: talyguryn/test-bot:latest
+    restart: on-failure
+    volumes:
+      - '.env:/usr/src/app/.env'
