@@ -10,8 +10,6 @@ const bot = new TelegramBot(BOT_TOKEN, {polling: true});
 
 bot.on('polling_error', function(error){ console.log(error); });
 
-console.log(process.env);
-
 bot.onText(/\/start/, (msg, match) => {
     const chatId = msg.chat.id;
 
