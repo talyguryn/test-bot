@@ -13,5 +13,5 @@ bot.on('polling_error', function(error){ console.log(error); });
 bot.onText(/\/start/, (msg, match) => {
     const chatId = msg.chat.id;
 
-    bot.sendMessage(chatId, 'test-bot 0.0.5');
+    bot.sendMessage(chatId, 'test-bot 0.0.6');
 });
